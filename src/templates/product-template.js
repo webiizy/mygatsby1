@@ -24,7 +24,9 @@ export default function({ data }) {
           {/* Right Detail */}
           <aside className="col-sm-7">
             <article className="p-5">
-              <h3 className="title mb-3">{title}</h3>
+              <h3 className="title mb-3" style={{ color: "red" }}>
+                {title}
+              </h3>
               <div className="mb-3">
                 <var className="price h3 text-warning">
                   <span className="currency">US $</span>
@@ -89,6 +91,10 @@ export default function({ data }) {
           </aside>
         </div>
       </div>
+
+      <Link to={`/products/`}>
+        <h2>Go back to products</h2>
+      </Link>
     </Layout>
   );
 }
